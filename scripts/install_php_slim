@@ -1,0 +1,8 @@
+#!/bin/bash
+cd /var/www/html/
+amazon-linux-extras install php7.3=7.3.13
+yum -y update
+yum -y install php-mbstring-7.3.13-1.amzn2 php-xml-7.3.13-1.amzn2
+curl -s https://getcomposer.org/installer | php
+php composer.phar install
+php composer.phar require slim/slim "^3.10"

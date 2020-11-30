@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Install apache
+yum -y install httpd-2.4.41
